@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lucas Ojeda</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Laboratorio Final</h1>
+
+    <h2>Agregar Cliente</h2>
+    <form action="procesar.php" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        Apellido: <input type="text" name="apellido"><br>
+        Email: <input type="text" name="email"><br>
+        Calle: <input type="text" name="calle"><br>
+        Número: <input type="text" name="numero"><br>
+        <input type="submit" name="cargar_cliente" value="Agregar Cliente">
+    </form>
+
+    <h2>Agregar Producto</h2>
+    <form action="procesar.php" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        Precio: <input type="text" name="precio"><br>
+        <input type="submit" name="cargar_producto" value="Agregar Producto">
+    </form>
+
+    <h2>Buscar Producto por ID</h2>
+    <form action="procesar.php" method="post">
+        ID del Producto: <input type="text" name="id_producto"><br>
+        <input type="submit" name="buscar_producto_por_id" value="Buscar Producto">
+    </form>
+
+    <h2>Ver Listados</h2>
+    <form action="procesar.php" method="post">
+        <input type="submit" name="mostrar_clientes" value="clientes registrados" class="boton">
+        <input type="submit" name="mostrar_productos" value="productos egistrados" class="boton">
+        <input type="submit" name="mostrar_detalles" value="detalles de productos" class="boton">
+    </form>
+
+    <script src="validacion.js"></script>
+</body>
+</html>
